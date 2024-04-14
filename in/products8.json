@@ -1,0 +1,86 @@
+[
+  {
+    "name": "Men's Leather Wallet",
+    "releaseYear": 2022,
+    "price": 70.00,
+    "manufacturer": "ElegantWear",
+    "categories": "Men's, Accessories"
+  },
+  {
+    "name": "Women's Knee-High Boots",
+    "releaseYear": 2023,
+    "price": 180.00,
+    "manufacturer": "ElegantFootwear",
+    "categories": "Women's, Footwear"
+  },
+  {
+    "name": "Unisex Fitness Tracker",
+    "releaseYear": 2022,
+    "price": 100.00,
+    "manufacturer": "HealthTech",
+    "categories": "Unisex, Accessories"
+  },
+  {
+    "name": "Men's Slim Fit Shirt",
+    "releaseYear": 2023,
+    "price": 85.00,
+    "manufacturer": "CasualWear",
+    "categories": "Men's, Clothing"
+  },
+  {
+    "name": "Women's Leather Tote Bag",
+    "releaseYear": 2022,
+    "price": 220.00,
+    "manufacturer": "LuxuryLeather",
+    "categories": "Women's, Accessories"
+  },
+  {
+    "name": "Unisex Gym Bag",
+    "releaseYear": 2023,
+    "price": 90.00,
+    "manufacturer": "SportyStyles",
+    "categories": "Unisex, Accessories"
+  },
+  {
+    "name": "Men's Oxford Shoes",
+    "releaseYear": 2022,
+    "price": 150.00,
+    "manufacturer": "ElegantFootwear",
+    "categories": "Men's, Footwear"
+  },
+  {
+    "name": "Women's Casual Loafers",
+    "releaseYear": 2023,
+    "price": 120.00,
+    "manufacturer": "FootwearWorld",
+    "categories": "Women's, Footwear"
+  },
+  {
+    "name": "Unisex Leather Bracelet",
+    "releaseYear": 2022,
+    "price": 40.00,
+    "manufacturer": "ElegantWear",
+    "categories": "Unisex, Accessories"
+  },
+  {
+    "name": "Men's Cargo Pants",
+    "releaseYear": 2023,
+    "price": 80.00,
+    "manufacturer": "OutdoorGear",
+    "categories": "Men's, Clothing"
+  },
+  {
+    "name": "Women's Wool Coat",
+    "releaseYear": 2022,
+    "price": 280.00,
+    "manufacturer": "ElegantWear",
+    "categories": "Women's, Clothing"
+  },
+  {
+    "name": "Unisex Leather Wallet",
+    "releaseYear": 2023,
+    "price": 60.00,
+    "manufacturer": "UrbanPack",
+    "categories": "Unisex, Accessories"
+  }
+]

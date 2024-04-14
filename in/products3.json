@@ -1,0 +1,86 @@
+[
+  {
+    "name": "Women's Formal Blouse",
+    "releaseYear": 2022,
+    "price": 70.00,
+    "manufacturer": "ElegantWear",
+    "categories": "Women's, Clothing"
+  },
+  {
+    "name": "Men's Running Shorts",
+    "releaseYear": 2023,
+    "price": 55.00,
+    "manufacturer": "ActiveGear",
+    "categories": "Men's, Sportswear"
+  },
+  {
+    "name": "Unisex Leather Wallet",
+    "releaseYear": 2022,
+    "price": 40.00,
+    "manufacturer": "LuxuryLeather",
+    "categories": "Unisex, Accessories"
+  },
+  {
+    "name": "Women's Yoga Pants",
+    "releaseYear": 2023,
+    "price": 45.00,
+    "manufacturer": "ActiveWear",
+    "categories": "Women's, Sportswear"
+  },
+  {
+    "name": "Men's Classic Fedora",
+    "releaseYear": 2022,
+    "price": 35.00,
+    "manufacturer": "HatMasters",
+    "categories": "Men's, Accessories"
+  },
+  {
+    "name": "Women's Beach Sandals",
+    "releaseYear": 2023,
+    "price": 25.00,
+    "manufacturer": "BeachStyle",
+    "categories": "Women's, Footwear"
+  },
+  {
+    "name": "Unisex Canvas Backpack",
+    "releaseYear": 2022,
+    "price": 60.00,
+    "manufacturer": "UrbanPack",
+    "categories": "Unisex, Accessories"
+  },
+  {
+    "name": "Men's Golf Polo",
+    "releaseYear": 2023,
+    "price": 75.00,
+    "manufacturer": "SportyStyles",
+    "categories": "Men's, Sportswear"
+  },
+  {
+    "name": "Women's Leather Tote Bag",
+    "releaseYear": 2022,
+    "price": 120.00,
+    "manufacturer": "LuxuryLeather",
+    "categories": "Women's, Accessories"
+  },
+  {
+    "name": "Unisex Casual Sneakers",
+    "releaseYear": 2023,
+    "price": 90.00,
+    "manufacturer": "FootwearWorld",
+    "categories": "Unisex, Footwear"
+  },
+  {
+    "name": "Men's Swim Shorts",
+    "releaseYear": 2022,
+    "price": 40.00,
+    "manufacturer": "BeachStyle",
+    "categories": "Swimwear, Men's"
+  },
+  {
+    "name": "Women's Classic Heels",
+    "releaseYear": 2023,
+    "price": 85.00,
+    "manufacturer": "FashionHeels",
+    "categories": "Women's, Footwear"
+  }
+]

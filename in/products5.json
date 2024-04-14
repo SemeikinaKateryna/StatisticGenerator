@@ -1,0 +1,86 @@
+[
+  {
+    "name": "Women's Office Blazer",
+    "releaseYear": 2023,
+    "price": 150.00,
+    "manufacturer": "ClassyPants",
+    "categories": "Women's, Clothing"
+  },
+  {
+    "name": "Unisex Fitness Tracker",
+    "releaseYear": 2022,
+    "price": 100.00,
+    "manufacturer": "TimeMaster",
+    "categories": "Unisex, Accessories"
+  },
+  {
+    "name": "Men's Casual Loafers",
+    "releaseYear": 2023,
+    "price": 90.00,
+    "manufacturer": "ElegantFootwear",
+    "categories": "Men's, Footwear"
+  },
+  {
+    "name": "Women's Designer Handbag",
+    "releaseYear": 2022,
+    "price": 250.00,
+    "manufacturer": "LuxuryLeather",
+    "categories": "Women's, Accessories"
+  },
+  {
+    "name": "Unisex Polarized Sunglasses",
+    "releaseYear": 2023,
+    "price": 80.00,
+    "manufacturer": "SunShade",
+    "categories": "Unisex, Accessories"
+  },
+  {
+    "name": "Men's Training Shorts",
+    "releaseYear": 2022,
+    "price": 65.00,
+    "manufacturer": "ActiveFootwear",
+    "categories": "Men's, Sportswear"
+  },
+  {
+    "name": "Women's Casual Sneakers",
+    "releaseYear": 2023,
+    "price": 120.00,
+    "manufacturer": "FootwearWorld",
+    "categories": "Women's, Footwear"
+  },
+  {
+    "name": "Unisex Leather Wallet",
+    "releaseYear": 2022,
+    "price": 60.00,
+    "manufacturer": "ElegantWear",
+    "categories": "Unisex, Accessories"
+  },
+  {
+    "name": "Men's Golf Polo",
+    "releaseYear": 2023,
+    "price": 85.00,
+    "manufacturer": "SportyStyles",
+    "categories": "Men's, Sportswear"
+  },
+  {
+    "name": "Men's Leather Watch",
+    "releaseYear": 2022,
+    "price": 200.00,
+    "manufacturer": "TimeMaster",
+    "categories": "Men's, Accessories"
+  },
+  {
+    "name": "Women's Cocktail Dress",
+    "releaseYear": 2022,
+    "price": 350.00,
+    "manufacturer": "ElegantWear",
+    "categories": "Women's, Clothing"
+  },
+  {
+    "name": "Unisex Wool Beanie",
+    "releaseYear": 2022,
+    "price": 40.00,
+    "manufacturer": "ElegantWear",
+    "categories": "Unisex, Accessories"
+  }
+]

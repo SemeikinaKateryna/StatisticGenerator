@@ -1,0 +1,72 @@
+[
+  {
+    "name": "Men's Casual Vest",
+    "releaseYear": 2022,
+    "price": 85.00,
+    "manufacturer": "OutdoorGear",
+    "categories": "Men's, Clothing"
+  },
+  {
+    "name": "Women's Wedge Sandals",
+    "releaseYear": 2023,
+    "price": 110.00,
+    "manufacturer": "FashionHeels",
+    "categories": "Women's, Footwear"
+  },
+  {
+    "name": "Unisex Bluetooth Earbuds",
+    "releaseYear": 2022,
+    "price": 75.00,
+    "manufacturer": "TechTrend",
+    "categories": "Unisex, Accessories"
+  },
+  {
+    "name": "Men's Linen Shorts",
+    "releaseYear": 2023,
+    "price": 60.00,
+    "manufacturer": "CasualWear",
+    "categories": "Men's, Clothing"
+  },
+  {
+    "name": "Women's Designer Scarf",
+    "releaseYear": 2022,
+    "price": 150.00,
+    "manufacturer": "LuxuryLeather",
+    "categories": "Women's, Accessories"
+  },
+  {
+    "name": "Unisex Duffel Bag",
+    "releaseYear": 2023,
+    "price": 120.00,
+    "manufacturer": "TravelEssentials",
+    "categories": "Unisex, Accessories"
+  },
+  {
+    "name": "Men's Trail Hiking Boots",
+    "releaseYear": 2022,
+    "price": 160.00,
+    "manufacturer": "OutdoorGear",
+    "categories": "Men's, Footwear"
+  },
+  {
+    "name": "Women's Casual Sneaker",
+    "releaseYear": 2023,
+    "price": 130.00,
+    "manufacturer": "FootwearWorld",
+    "categories": "Women's, Footwear"
+  },
+  {
+    "name": "Unisex Leather Keychain",
+    "releaseYear": 2022,
+    "price": 30.00,
+    "manufacturer": "ElegantWear",
+    "categories": "Unisex, Accessories"
+  },
+  {
+    "name": "Men's Slim Fit Jeans",
+    "releaseYear": 2023,
+    "price": 90.00,
+    "manufacturer": "ClassyPants",
+    "categories": "Men's, Clothing"
+  }
+]

@@ -1,0 +1,135 @@
+[
+{
+    "name": "Women's High Heels",
+    "releaseYear": 2022,
+    "price": 100.00,
+    "manufacturer": "FashionHeels",
+    "categories": "Women's, Footwear"
+  },
+  {
+    "name": "Unisex Sports Watch",
+    "releaseYear": 2023,
+    "price": 120.00,
+    "manufacturer": "TimeMaster",
+    "categories": "Unisex, Accessories"
+  },
+  {
+    "name": "Men's Formal Trousers",
+    "releaseYear": 2022,
+    "price": 80.00,
+    "manufacturer": "ClassyPants",
+    "categories": "Men's, Clothing"
+  },
+  {
+    "name": "Women's Silk Blouse",
+    "releaseYear": 2023,
+    "price": 90.00,
+    "manufacturer": "ElegantWear",
+    "categories": "Women's, Clothing"
+  },
+  {
+    "name": "Unisex Sunglasses",
+    "releaseYear": 2022,
+    "price": 50.00,
+    "manufacturer": "SunShade",
+    "categories": "Unisex, Accessories"
+  },
+  {
+    "name": "Men's Running Shoes",
+    "releaseYear": 2023,
+    "price": 110.00,
+    "manufacturer": "ActiveFootwear",
+    "categories": "Men's, Footwear, Sportswear"
+  },
+  {
+    "name": "Women's Leather Wallet",
+    "releaseYear": 2022,
+    "price": 70.00,
+    "manufacturer": "LuxuryLeather",
+    "categories": "Women's, Accessories"
+  },
+  {
+    "name": "Unisex Backpack",
+    "releaseYear": 2023,
+    "price": 80.00,
+    "manufacturer": "UrbanPack",
+    "categories": "Unisex, Accessories"
+  },
+  {
+    "name": "Men's Polo Shirt",
+    "releaseYear": 2022,
+    "price": 60.00,
+    "manufacturer": "CasualWear",
+    "categories": "Men's, Clothing"
+  },
+  {
+    "name": "Men's Leather Belt",
+    "releaseYear": 2022,
+    "price": 60.00,
+    "manufacturer": "ElegantWear",
+    "categories": "Men's, Accessories"
+  },
+  {
+    "name": "Women's Evening Gown",
+    "releaseYear": 2022,
+    "price": 400.00,
+    "manufacturer": "ElegantWear",
+    "categories": "Women's, Clothing"
+  },
+  {
+    "name": "Unisex Leather Gloves",
+    "releaseYear": 2022,
+    "price": 45.00,
+    "manufacturer": "ElegantWear",
+    "categories": "Unisex, Accessories"
+  },
+  {
+    "name": "Men's Dress Shoes",
+    "releaseYear": 2022,
+    "price": 180.00,
+    "manufacturer": "ElegantFootwear",
+    "categories": "Men's, Footwear"
+  },
+  {
+    "name": "Women's Ankle Boots",
+    "releaseYear": 2023,
+    "price": 160.00,
+    "manufacturer": "ElegantFootwear",
+    "categories": "Women's, Footwear"
+  },
+  {
+    "name": "Unisex Winter Scarf",
+    "releaseYear": 2022,
+    "price": 35.00,
+    "manufacturer": "ElegantWear",
+    "categories": "Unisex, Accessories"
+  },
+  {
+    "name": "Men's Sports Jacket",
+    "releaseYear": 2023,
+    "price": 220.00,
+    "manufacturer": "OutdoorGear",
+    "categories": "Men's, Sportswear"
+  },
+  {
+    "name": "Women's Hiking Boots",
+    "releaseYear": 2023,
+    "price": 190.00,
+    "manufacturer": "OutdoorGear",
+    "categories": "Women's, Footwear"
+  },
+  {
+    "name": "Unisex Camping Backpack",
+    "releaseYear": 2023,
+    "price": 120.00,
+    "manufacturer": "OutdoorGear",
+    "categories": "Unisex, Accessories"
+  },
+  {
+    "name": "Men's Casual Shorts",
+    "releaseYear": 2022,
+    "price": 50.00,
+    "manufacturer": "OutdoorGear",
+    "categories": "Men's, Clothing"
+  }
+]
