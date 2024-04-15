@@ -14,10 +14,10 @@ public class Main {
         IJsonReader<Product> jsonReader = new JsonProductReader("./in");
         List<Product> products = jsonReader.read();
 
-        StatisticGenerator<Product> generator = new StatisticGenerator<>(Product.class);
-        Map<Object, Integer> statisticsMap = generator.generateStatisticByAttribute(products, "categories");
+        StatisticGenerator<Product> generator = new StatisticGenerator<>(Product.class, "categories");
+        Map<Object, Integer> statisticsMap = generator.generateStatisticByAttribute(products);
 
         IXmlWriter xmlWriter = new XmlWriter();
-        xmlWriter.write(statisticsMap, "categories");
+        xmlWriter.write(statisticsMap, generator.getAttribute());
     }
 }
