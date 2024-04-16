@@ -1,6 +1,5 @@
 package entity;
 
-import com.fasterxml.jackson.annotation.JsonAutoDetect;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -17,7 +16,7 @@ public class Product {
     private String name;
     private Integer releaseYear;
     private Double price;
-    private String manufacturer;
+    private Manufacturer manufacturer;
     private String[] categories;
 
     @Override

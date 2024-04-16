@@ -1,6 +1,7 @@
 package mapper;
 
 import dto.ProductDto;
+import entity.Manufacturer;
 import entity.Product;
 
 public class ProductMapper {
@@ -9,7 +10,7 @@ public class ProductMapper {
         product.setName(productDto.getName());
         product.setReleaseYear(productDto.getReleaseYear());
         product.setPrice(productDto.getPrice());
-        product.setManufacturer(productDto.getManufacturer());
+        product.setManufacturer(new Manufacturer(productDto.getManufacturer()));
         product.setCategories(productDto.getCategories().split(",\\s*"));
         return product;
     }

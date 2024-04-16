@@ -14,7 +14,7 @@ public class Main {
         IJsonReader<Product> jsonReader = new JsonProductReader("./in");
         List<Product> products = jsonReader.read();
 
-        StatisticGenerator<Product> generator = new StatisticGenerator<>(Product.class, "categories");
+        StatisticGenerator<Product> generator = new StatisticGenerator<>(Product.class, "manufacturer");
         Map<Object, Integer> statisticsMap = generator.generateStatisticByAttribute(products);
 
         IXmlWriter xmlWriter = new XmlWriter();

@@ -1,11 +1,6 @@
-import com.fasterxml.jackson.databind.ObjectMapper;
+import entity.Manufacturer;
 import entity.Product;
-import mapper.ProductMapper;
-import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-import org.mockito.Mock;
-import org.mockito.Mockito;
-import org.mockito.MockitoAnnotations;
 import reading.JsonProductReader;
 
 import java.util.List;
@@ -24,11 +19,11 @@ public class JsonProductReaderTest {
 
     @Test
     public void testReadSuccessful() {
-        Product product1 = new Product("Men's Casual Shirt", 2021, 45.99, "FashionHub", new String[] {"Men's", "Clothing"});
-        Product product2 = new Product("Women's Summer Dress", 2020, 65.50, "StyleQueen", new String[] {"Women's", "Clothing"});
-        Product product3 = new Product("Unisex Sneakers", 2022, 80.00, "FootwearWorld", new String[] {"Unisex", "Footwear"});
-        Product product4 = new Product("Men's Winter Jacket", 2021, 120.00, "OutdoorGear", new String[] {"Men's", "Clothing"});
-        Product product5 = new Product("Women's Leather Boots", 2020, 150.99, "ElegantFootwear", new String[] {"Women's", "Footwear"});
+        Product product1 = new Product("Men's Casual Shirt", 2021, 45.99, new Manufacturer("FashionHub"), new String[] {"Men's", "Clothing"});
+        Product product2 = new Product("Women's Summer Dress", 2020, 65.50, new Manufacturer("StyleQueen"), new String[] {"Women's", "Clothing"});
+        Product product3 = new Product("Unisex Sneakers", 2022, 80.00, new Manufacturer("FootwearWorld"), new String[] {"Unisex", "Footwear"});
+        Product product4 = new Product("Men's Winter Jacket", 2021, 120.00, new Manufacturer("OutdoorGear"), new String[] {"Men's", "Clothing"});
+        Product product5 = new Product("Women's Leather Boots", 2020, 150.99, new Manufacturer("ElegantFootwear"), new String[] {"Women's", "Footwear"});
 
         JsonProductReader jsonProductReader = new JsonProductReader(SUCCESSFUL_FOLDER_PATH);
 
@@ -101,8 +96,8 @@ public class JsonProductReaderTest {
     public void testReadInvalidJsons() {
         JsonProductReader jsonProductReader = new JsonProductReader(INVALID_JSON_FOLDER_PATH);
 
-        Product product3 = new Product("Unisex Sneakers", 2022, 80.00, "FootwearWorld", new String[] {"Unisex", "Footwear"});
-        Product product5 = new Product("Women's Leather Boots", 2020, 150.99, "ElegantFootwear", new String[] {"Women's", "Footwear"});
+        Product product3 = new Product("Unisex Sneakers", 2022, 80.00, new Manufacturer("FootwearWorld"), new String[] {"Unisex", "Footwear"});
+        Product product5 = new Product("Women's Leather Boots", 2020, 150.99, new Manufacturer("ElegantFootwear"), new String[] {"Women's", "Footwear"});
 
         List<Product> products = jsonProductReader.read();
 
