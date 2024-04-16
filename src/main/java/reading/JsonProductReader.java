@@ -46,31 +46,26 @@ public class JsonProductReader implements IJsonReader<Product> {
                     continue;
                 }
 
-                try {
+                try (JsonParser jsonParser = jsonMapper.getFactory().createParser(file)) {
+                    while (jsonParser.nextToken() != null) {
+                        if (jsonParser.currentToken() == JsonToken.START_OBJECT) {
+                            ProductDto productDto = jsonMapper.readValue(jsonParser, ProductDto.class);
 
-                    try (JsonParser jsonParser = jsonMapper.getFactory().createParser(file)) {
-                        while (jsonParser.nextToken() != null) {
-                            if (jsonParser.currentToken() == JsonToken.START_OBJECT) {
-                                ProductDto productDto = jsonMapper.readValue(jsonParser, ProductDto.class);
-
-                                if (productDto.getName() == null || productDto.getReleaseYear() == null || productDto.getPrice() == null
-                                        || productDto.getManufacturer() == null || productDto.getCategories() == null) {
-                                    System.out.println("Skipped invalid ProductDto: " + productDto);
-                                    continue;
-                                }
-
-                                // Мапимо ProductDto на Product
-                                Product product = productMapper.mapProductDtoToProduct(productDto);
-
-                                // Додавання об'єкта Product до списку продуктів
-                                products.add(product);
+                            if (productDto.getName() == null || productDto.getReleaseYear() == null || productDto.getPrice() == null
+                                    || productDto.getManufacturer() == null || productDto.getCategories() == null) {
+                                System.out.println("Skipped invalid ProductDto: " + productDto);
+                                continue;
                             }
+
+                            // Мапимо ProductDto на Product
+                            Product product = productMapper.mapProductDtoToProduct(productDto);
+
+                            // Додавання об'єкта Product до списку продуктів
+                            products.add(product);
                         }
-                    } catch (IOException e) {
-                        throw new RuntimeException("Error processing file: " + file.getAbsolutePath(), e);
                     }
-
-
+                } catch (IOException e) {
+                    throw new RuntimeException("Error parsing file: " + file.getAbsolutePath(), e);
                 } catch (Exception e) {
                     throw new RuntimeException("Error reading file: " + file.getAbsolutePath(), e);
                 }

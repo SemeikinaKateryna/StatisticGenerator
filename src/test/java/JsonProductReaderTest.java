@@ -8,7 +8,6 @@ import java.util.List;
 import static org.junit.jupiter.api.Assertions.*;
 
 public class JsonProductReaderTest {
-
     private static final String SUCCESSFUL_FOLDER_PATH = "./testDirectorySuccess";
     private static final String INVALID_FOLDER_PATH = "./invalid";
     private static final String FILE_NOT_FOLDER_PATH = "./testFileNotDirectory";

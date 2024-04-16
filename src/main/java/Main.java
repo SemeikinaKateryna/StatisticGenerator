@@ -10,11 +10,21 @@ import java.util.Map;
 
 public class Main {
     public static void main(String[] args) {
+        if (args.length != 2) {
+            System.out.println("Usage: java Main <folderPath> <attributeName>");
+            return;
+        }
 
-        IJsonReader<Product> jsonReader = new JsonProductReader("./in");
+        String folderPath = args[0];
+        String attributeName = args[1];
+
+//        String folderPath = "D:\\IdeaProjects\\StatisticGenerator\\in";
+//        String attributeName = "name";
+
+        IJsonReader<Product> jsonReader = new JsonProductReader(folderPath);
         List<Product> products = jsonReader.read();
 
-        StatisticGenerator<Product> generator = new StatisticGenerator<>(Product.class, "manufacturer");
+        StatisticGenerator<Product> generator = new StatisticGenerator<>(Product.class, attributeName);
         Map<Object, Integer> statisticsMap = generator.generateStatisticByAttribute(products);
 
         IXmlWriter xmlWriter = new XmlWriter();
