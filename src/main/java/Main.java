@@ -18,6 +18,6 @@ public class Main {
         Map<Object, Integer> statisticsMap = generator.generateStatisticByAttribute(products);
 
         IXmlWriter xmlWriter = new XmlWriter();
-        xmlWriter.write(statisticsMap, generator.getAttribute());
+        System.out.println(xmlWriter.write(statisticsMap, generator.getAttribute()));
     }
 }

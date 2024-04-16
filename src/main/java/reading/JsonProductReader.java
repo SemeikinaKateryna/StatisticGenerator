@@ -2,7 +2,6 @@ package reading;
 
 import com.fasterxml.jackson.core.JsonParser;
 import com.fasterxml.jackson.core.JsonToken;
-import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.SerializationFeature;
 import dto.ProductDto;
@@ -11,7 +10,6 @@ import mapper.ProductMapper;
 
 import java.io.File;
 import java.io.IOException;
-import java.nio.file.Files;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -49,21 +47,6 @@ public class JsonProductReader implements IJsonReader<Product> {
                 }
 
                 try {
-                    String fileContent = new String(Files.readAllBytes(file.toPath()));
-
-                    // Перевірка на наявність даних в JSON-файлі
-                    if ("{}".equals(fileContent.trim())) {
-                        continue; // Пропустити файл, якщо він містить порожній об'єкт
-                    }
-
-//                    ProductDto[] productsArray;
-//                    try {
-//                        productsArray = jsonMapper.readValue(file, ProductDto[].class);
-//                    } catch (Exception e) {
-//                        // Пропустити невалідний JSON і продовжити обробку наступного файлу
-//                        System.out.println("Skipped invalid JSON file: " + file.getAbsolutePath());
-//                        continue;
-//                    }
 
                     try (JsonParser jsonParser = jsonMapper.getFactory().createParser(file)) {
                         while (jsonParser.nextToken() != null) {
