@@ -59,4 +59,4 @@
 
 Інструкція по запуску програми
 
-<Path to .jar file> java -jar StatisticGenerator.jar <folderPath> <attributeName>
+java -jar StatisticGenerator.jar folderPath attributeName
