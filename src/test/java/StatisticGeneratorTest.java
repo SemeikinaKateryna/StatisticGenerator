@@ -5,6 +5,7 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 import java.util.Map;
 
@@ -74,5 +75,13 @@ public class StatisticGeneratorTest {
         assertEquals(2, map.get("Women's"));
         assertEquals(1, map.get("Unisex"));
         assertEquals(2, map.get("Footwear"));
+    }
+
+    @Test
+    public void testGenerateStatisticBySomeAttributeSorted(){
+        Map<Object, Integer> map = statisticGenerator.generateStatisticByAttribute("categories");
+        List<Integer> sortedValues = new ArrayList<>(map.values());
+
+        assertEquals(Arrays.asList(3, 2, 2, 2, 1), sortedValues);
     }
 }
