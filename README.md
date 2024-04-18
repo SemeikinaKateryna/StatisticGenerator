@@ -24,4 +24,4 @@
 
 Інструкція по запуску програми
 
-java -jar StatisticGenerator.jar <folderPath> <attributeName>
+java -jar StatisticGenerator.jar folderPath attributeName
