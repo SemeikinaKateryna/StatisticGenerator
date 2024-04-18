@@ -25,6 +25,7 @@
   },
   ...
 ]
+
 Вихідні файли в свою чергу містятся в папці output проекту, 
 приклад statistics_by_releaseYear.xml:
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
