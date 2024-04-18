@@ -7,45 +7,10 @@
 Приклади вхідних і вихідних файлів
 
 Файли вхідні містятся в папці input проекту, 
-приклад products.json:
-[
-  {
-    "name": "Men's Casual Shirt",
-    "releaseYear": 2021,
-    "price": 45.99,
-    "manufacturer": "FashionHub",
-    "categories": "Men's, Clothing"
-  },
-  {
-    "name": "Women's Summer Dress",
-    "releaseYear": 2020,
-    "price": 65.50,
-    "manufacturer": "StyleQueen",
-    "categories": "Women's, Clothing"
-  },
-  ...
-]
+приклад products.json:https://github.com/SemeikinaKateryna/StatisticGenerator/blob/master/input/products.json
 
 Вихідні файли в свою чергу містятся в папці output проекту, 
 приклад statistics_by_releaseYear.xml:
-<statistics>
-    <item>
-        <value>2022</value>
-        <count>196</count>
-    </item>
-    <item>
-        <value>2023</value>
-        <count>166</count>
-    </item>
-    <item>
-        <value>2020</value>
-        <count>10</count>
-    </item>
-    <item>
-        <value>2021</value>
-        <count>10</count>
-    </item>
-</statistics>
 
 
 Результати експериментів з різною кількістю потоків
