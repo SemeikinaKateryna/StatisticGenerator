@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<statistics>
+    <item>
+        <value>Clothing</value>
+        <count>138</count>
+    </item>
+    <item>
+        <value>Accessories</value>
+        <count>112</count>
+    </item>
+    <item>
+        <value>Footwear</value>
+        <count>102</count>
+    </item>
+    <item>
+        <value>Men's</value>
+        <count>99</count>
+    </item>
+    <item>
+        <value>Unisex</value>
+        <count>98</count>
+    </item>
+    <item>
+        <value>Women's</value>
+        <count>90</count>
+    </item>
+    <item>
+        <value>Kids'</value>
+        <count>75</count>
+    </item>
+    <item>
+        <value>Sportswear</value>
+        <count>29</count>
+    </item>
+    <item>
+        <value>Girls'</value>
+        <count>20</count>
+    </item>
+    <item>
+        <value>Boys'</value>
+        <count>20</count>
+    </item>
+    <item>
+        <value>Swimwear</value>
+        <count>11</count>
+    </item>
+</statistics>
