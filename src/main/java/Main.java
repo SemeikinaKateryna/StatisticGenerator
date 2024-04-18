@@ -10,17 +10,15 @@ import java.util.Map;
 
 public class Main {
     public static void main(String[] args) {
-//        if (args.length != 2) {
-//            System.out.println("Usage: java Main <folderPath> <attributeName>");
-//            return;
-//        }
-//
-//        String folderPath = args[0];
-//        String attributeName = args[1];
+        if (args.length != 2) {
+            System.out.println("Usage: java Main <folderPath> <attributeName>");
+            return;
+        }
+
+        String folderPath = args[0];
+        String attributeName = args[1];
 
         long startTime = System.currentTimeMillis();
-        String folderPath = "D:\\IdeaProjects\\StatisticGenerator\\input";
-        String attributeName = "categories";
 
         IJsonReader<Product> jsonReader = new JsonProductReader(folderPath);
         List<Product> products = jsonReader.read(8);
@@ -32,6 +30,6 @@ public class Main {
         xmlWriter.write(statisticsMap, attributeName);
 
         long endTime = System.currentTimeMillis();
-        System.out.println("Час виконання: " + (endTime - startTime) + " мс" );
+        System.out.println("Execution time: " + (endTime - startTime) + " ms" );
     }
 }
