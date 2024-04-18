@@ -10,7 +10,7 @@
 приклад products.json:https://github.com/SemeikinaKateryna/StatisticGenerator/blob/master/input/products.json
 
 Вихідні файли в свою чергу містятся в папці output проекту, 
-приклад statistics_by_releaseYear.xml:
+приклад statistics_by_releaseYear.xml: https://github.com/SemeikinaKateryna/StatisticGenerator/blob/master/output/statistics_by_releaseYear.xml
 
 
 Результати експериментів з різною кількістю потоків
@@ -24,4 +24,4 @@
 
 Інструкція по запуску програми
 
-java -jar StatisticGenerator.jar folderPath attributeName
+java -jar StatisticGenerator.jar <folderPath> <attributeName>
