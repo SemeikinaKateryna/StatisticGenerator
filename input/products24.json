@@ -1,0 +1,107 @@
+[
+  {
+    "name": "Men's Casual Jacket",
+    "releaseYear": 2022,
+    "price": 110.00,
+    "manufacturer": "OutdoorGear",
+    "categories": "Men's, Clothing"
+  },
+  {
+    "name": "Women's Classic Pumps",
+    "releaseYear": 2023,
+    "price": 130.00,
+    "manufacturer": "FashionHeels",
+    "categories": "Women's, Footwear"
+  },
+  {
+    "name": "Unisex Smartwatch",
+    "releaseYear": 2022,
+    "price": 150.00,
+    "manufacturer": "TimeMaster",
+    "categories": "Unisex, Accessories"
+  },
+  {
+    "name": "Men's Chino Pants",
+    "releaseYear": 2023,
+    "price": 95.00,
+    "manufacturer": "ClassyPants",
+    "categories": "Men's, Clothing"
+  },
+  {
+    "name": "Women's Leather Clutch",
+    "releaseYear": 2022,
+    "price": 180.00,
+    "manufacturer": "LuxuryLeather",
+    "categories": "Women's, Accessories"
+  },
+  {
+    "name": "Unisex Aviator Sunglasses",
+    "releaseYear": 2023,
+    "price": 70.00,
+    "manufacturer": "SunShade",
+    "categories": "Unisex, Accessories"
+  },
+  {
+    "name": "Men's Trail Running Shoes",
+    "releaseYear": 2022,
+    "price": 140.00,
+    "manufacturer": "ActiveFootwear",
+    "categories": "Men's, Footwear, Sportswear"
+  },
+  {
+    "name": "Women's Ballet Flats",
+    "releaseYear": 2023,
+    "price": 100.00,
+    "manufacturer": "FootwearWorld",
+    "categories": "Women's, Footwear"
+  },
+  {
+    "name": "Unisex Leather Belt",
+    "releaseYear": 2022,
+    "price": 55.00,
+    "manufacturer": "ElegantWear",
+    "categories": "Unisex, Accessories"
+  },
+  {
+    "name": "Men's Denim Shirt",
+    "releaseYear": 2023,
+    "price": 75.00,
+    "manufacturer": "CasualWear",
+    "categories": "Men's, Clothing"
+  },
+  {
+    "name": "Women's Leather Jacket",
+    "releaseYear": 2022,
+    "price": 320.00,
+    "manufacturer": "ElegantWear",
+    "categories": "Women's, Clothing"
+  },
+  {
+    "name": "Unisex Winter Boots",
+    "releaseYear": 2022,
+    "price": 180.00,
+    "manufacturer": "ElegantFootwear",
+    "categories": "Unisex, Footwear"
+  },
+  {
+    "name": "Men's Golf Shoes",
+    "releaseYear": 2023,
+    "price": 160.00,
+    "manufacturer": "SportyStyles",
+    "categories": "Men's, Footwear"
+  },
+  {
+    "name": "Women's Beach Sandals",
+    "releaseYear": 2022,
+    "price": 60.00,
+    "manufacturer": "BeachStyle",
+    "categories": "Women's, Footwear"
+  },
+  {
+    "name": "Unisex Leather Backpack",
+    "releaseYear": 2023,
+    "price": 190.00,
+    "manufacturer": "UrbanPack",
+    "categories": "Unisex, Accessories"
+  }
+]

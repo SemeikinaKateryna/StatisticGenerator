@@ -18,16 +18,20 @@ public class Main {
 //        String folderPath = args[0];
 //        String attributeName = args[1];
 
-        String folderPath = "D:\\IdeaProjects\\StatisticGenerator\\in";
-        String attributeName = "name";
+        long startTime = System.currentTimeMillis();
+        String folderPath = "D:\\IdeaProjects\\StatisticGenerator\\input";
+        String attributeName = "categories";
 
         IJsonReader<Product> jsonReader = new JsonProductReader(folderPath);
-        List<Product> products = jsonReader.read();
+        List<Product> products = jsonReader.read(8);
 
         StatisticGenerator generator = new StatisticGenerator(products);
         Map<Object, Integer> statisticsMap = generator.generateStatisticByAttribute(attributeName);
 
         IXmlWriter xmlWriter = new XmlWriter();
-        System.out.println(xmlWriter.write(statisticsMap, attributeName));
+        xmlWriter.write(statisticsMap, attributeName);
+
+        long endTime = System.currentTimeMillis();
+        System.out.println("Час виконання: " + (endTime - startTime) + " мс" );
     }
 }

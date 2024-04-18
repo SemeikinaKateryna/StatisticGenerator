@@ -15,6 +15,7 @@ public class JsonProductReaderTest {
     private static final String EMPTY_FILES_IN_DIRECTORY_FOLDER_PATH = "./testDirectoryEmptyFiles";
     private static final String EMPTY_JSON_FOLDER_PATH = "./testDirectoryEmptyJsons";
     private static final String INVALID_JSON_FOLDER_PATH = "./testDirectoryInvalidJsons";
+    private static final int THREADS_COUNT = 8;
 
     @Test
     public void testReadSuccessful() {
@@ -26,7 +27,7 @@ public class JsonProductReaderTest {
 
         JsonProductReader jsonProductReader = new JsonProductReader(SUCCESSFUL_FOLDER_PATH);
 
-        List<Product> productList = jsonProductReader.read();
+        List<Product> productList = jsonProductReader.read(THREADS_COUNT);
 
         assertNotNull(productList);
         assertEquals(5, productList.size());
@@ -42,7 +43,7 @@ public class JsonProductReaderTest {
         JsonProductReader jsonProductReader = new JsonProductReader(INVALID_FOLDER_PATH);
 
         IllegalArgumentException exception =
-                assertThrows(IllegalArgumentException.class, jsonProductReader::read);
+                assertThrows(IllegalArgumentException.class, ()-> jsonProductReader.read(THREADS_COUNT));
 
         assertEquals(
                 "Provided path is not a valid directory.",
@@ -54,7 +55,7 @@ public class JsonProductReaderTest {
         JsonProductReader jsonProductReader = new JsonProductReader(FILE_NOT_FOLDER_PATH);
 
         IllegalArgumentException exception =
-                assertThrows(IllegalArgumentException.class, jsonProductReader::read);
+                assertThrows(IllegalArgumentException.class, ()-> jsonProductReader.read(THREADS_COUNT));
 
         assertEquals(
                 "Provided path is not a valid directory.",
@@ -65,7 +66,7 @@ public class JsonProductReaderTest {
     public void testReadEmptyDirectory() {
         JsonProductReader jsonProductReader = new JsonProductReader(EMPTY_DIRECTORY_FOLDER_PATH);
 
-        List<Product> products = jsonProductReader.read();
+        List<Product> products = jsonProductReader.read(THREADS_COUNT);
 
         assertNotNull(products);
         assertTrue(products.isEmpty());
@@ -75,7 +76,7 @@ public class JsonProductReaderTest {
     public void testReadEmptyFilesInDirectory() {
         JsonProductReader jsonProductReader = new JsonProductReader(EMPTY_FILES_IN_DIRECTORY_FOLDER_PATH);
 
-        List<Product> products = jsonProductReader.read();
+        List<Product> products = jsonProductReader.read(THREADS_COUNT);
 
         assertNotNull(products);
         assertTrue(products.isEmpty());
@@ -85,7 +86,7 @@ public class JsonProductReaderTest {
     public void testReadEmptyJsons() {
         JsonProductReader jsonProductReader = new JsonProductReader(EMPTY_JSON_FOLDER_PATH);
 
-        List<Product> products = jsonProductReader.read();
+        List<Product> products = jsonProductReader.read(THREADS_COUNT);
 
         assertNotNull(products);
         assertTrue(products.isEmpty());
@@ -98,7 +99,7 @@ public class JsonProductReaderTest {
         Product product3 = new Product("Unisex Sneakers", 2022, 80.00, new Manufacturer("FootwearWorld"), new String[] {"Unisex", "Footwear"});
         Product product5 = new Product("Women's Leather Boots", 2020, 150.99, new Manufacturer("ElegantFootwear"), new String[] {"Women's", "Footwear"});
 
-        List<Product> products = jsonProductReader.read();
+        List<Product> products = jsonProductReader.read(THREADS_COUNT);
 
         assertNotNull(products);
         assertFalse(products.isEmpty());

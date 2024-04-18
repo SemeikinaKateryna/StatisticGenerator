@@ -9,28 +9,25 @@ import java.util.stream.Stream;
 
 public class StatisticGenerator {
     private final List<Product> objects;
-    private final Map<Object, Integer> statisticMap;
 
     public StatisticGenerator(List<Product> objects) {
         this.objects = objects;
-        statisticMap = new HashMap<>();
     }
 
     public Map<Object,Integer> generateStatisticByAttribute(String attribute) {
-        if(objects.isEmpty()){
-            System.out.println("List of objects is empty!");
-            return statisticMap;
+        if (objects.isEmpty()) {
+            throw new IllegalArgumentException("List of objects is empty!");
         }
 
         Field field;
         try {
             field = Product.class.getDeclaredField(attribute);
         } catch (NoSuchFieldException e) {
-            System.out.println("No such field in this class exists!");
-            return statisticMap;
+            throw new IllegalArgumentException("No such field in this class exists!", e);
         }
         field.setAccessible(true);
 
+        Map<Object, Integer> statisticMap = new HashMap<>();
         // Заповнення мапи
         for (Product pr : objects) {
             try {

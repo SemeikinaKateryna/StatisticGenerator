@@ -1,0 +1,86 @@
+[
+  {
+    "name": "Men's Slim Fit Jeans",
+    "releaseYear": 2022,
+    "price": 60.00,
+    "manufacturer": "FashionHub",
+    "categories": "Men's, Clothing"
+  },
+  {
+    "name": "Women's Designer Skirt",
+    "releaseYear": 2023,
+    "price": 110.00,
+    "manufacturer": "StyleQueen",
+    "categories": "Women's, Clothing"
+  },
+  {
+    "name": "Unisex Athletic Shoes",
+    "releaseYear": 2022,
+    "price": 95.00,
+    "manufacturer": "FootwearWorld",
+    "categories": "Unisex, Footwear"
+  },
+  {
+    "name": "Men's Windbreaker Jacket",
+    "releaseYear": 2023,
+    "price": 130.00,
+    "manufacturer": "OutdoorGear",
+    "categories": "Men's, Clothing"
+  },
+  {
+    "name": "Women's Leather Sandals",
+    "releaseYear": 2022,
+    "price": 140.00,
+    "manufacturer": "ElegantFootwear",
+    "categories": "Women's, Footwear"
+  },
+  {
+    "name": "Kids' Striped T-shirt",
+    "releaseYear": 2022,
+    "price": 20.00,
+    "manufacturer": "TinyTrends",
+    "categories": "Kids', Clothing"
+  },
+  {
+    "name": "Boys' Denim Shorts",
+    "releaseYear": 2023,
+    "price": 25.99,
+    "manufacturer": "TinyTrends",
+    "categories": "Kids', Clothing"
+  },
+  {
+    "name": "Girls' Summer Hat",
+    "releaseYear": 2023,
+    "price": 15.50,
+    "manufacturer": "BeachStyle",
+    "categories": "Kids', Accessories"
+  },
+  {
+    "name": "Kids' Rain Jacket",
+    "releaseYear": 2022,
+    "price": 45.00,
+    "manufacturer": "OutdoorGear",
+    "categories": "Kids', Clothing"
+  },
+  {
+    "name": "Unisex Kids' Sunglasses",
+    "releaseYear": 2023,
+    "price": 30.00,
+    "manufacturer": "SunProtect",
+    "categories": "Unisex, Kids', Accessories"
+  },
+  {
+    "name": "Girls' Dance Leotard",
+    "releaseYear": 2022,
+    "price": 50.00,
+    "manufacturer": "DanceWear",
+    "categories": "Girls', Sportswear"
+  },
+  {
+    "name": "Boys' Baseball Cap",
+    "releaseYear": 2023,
+    "price": 18.00,
+    "manufacturer": "SportyStyles",
+    "categories": "Boys', Accessories"
+  }
+]

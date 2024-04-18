@@ -32,12 +32,12 @@ public class XmlWriter implements IXmlWriter{
             marshaller.setProperty(Marshaller.JAXB_FORMATTED_OUTPUT, Boolean.TRUE);
 
             // Створення директорії, якщо вона не існує
-            File directory = new File("./out");
+            File directory = new File("./output");
             if (!directory.exists()) {
                 directory.mkdirs();
             }
 
-            marshaller.marshal(statistics, new File("./out/statistics_by_" + attribute + ".xml"));
+            marshaller.marshal(statistics, new File("./output/statistics_by_" + attribute + ".xml"));
 
             return true;
         } catch (JAXBException e) {

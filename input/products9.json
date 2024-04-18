@@ -1,0 +1,156 @@
+[
+  {
+    "name": "Men's Casual Shirt",
+    "releaseYear": 2021,
+    "price": 45.99,
+    "manufacturer": "FashionHub",
+    "categories": "Men's, Clothing"
+  },
+  {
+    "name": "Women's Summer Dress",
+    "releaseYear": 2020,
+    "price": 65.50,
+    "manufacturer": "StyleQueen",
+    "categories": "Women's, Clothing"
+  },
+  {
+    "name": "Unisex Sneakers",
+    "releaseYear": 2022,
+    "price": 80.00,
+    "manufacturer": "FootwearWorld",
+    "categories": "Unisex, Footwear"
+  },
+  {
+    "name": "Men's Winter Jacket",
+    "releaseYear": 2021,
+    "price": 120.00,
+    "manufacturer": "OutdoorGear",
+    "categories": "Men's, Clothing"
+  },
+  {
+    "name": "Women's Leather Boots",
+    "releaseYear": 2020,
+    "price": 150.99,
+    "manufacturer": "ElegantFootwear",
+    "categories": "Women's, Footwear"
+  },
+  {
+    "name": "Kids' Denim Jeans",
+    "releaseYear": 2022,
+    "price": 35.50,
+    "manufacturer": "TinyTrends",
+    "categories": "Kids', Clothing"
+  },
+  {
+    "name": "Boys' T-shirt",
+    "releaseYear": 2023,
+    "price": 15.99,
+    "manufacturer": "TinyTrends",
+    "categories": "Kids', Clothing"
+  },
+  {
+    "name": "Girls' Skirt",
+    "releaseYear": 2023,
+    "price": 20.50,
+    "manufacturer": "TinyTrends",
+    "categories": "Kids', Clothing"
+  },
+  {
+    "name": "Kids' Sneakers",
+    "releaseYear": 2022,
+    "price": 50.00,
+    "manufacturer": "FootwearKids",
+    "categories": "Kids', Footwear"
+  },
+  {
+    "name": "Unisex Kids' Beanie Hat",
+    "releaseYear": 2022,
+    "price": 18.00,
+    "manufacturer": "WarmHats",
+    "categories": "Unisex, Kids', Accessories"
+  },
+  {
+    "name": "Kids' Swim Shorts",
+    "releaseYear": 2022,
+    "price": 30.00,
+    "manufacturer": "BeachStyle",
+    "categories": "Swimwear, Kids'"
+  },
+  {
+    "name": "Girls' Floral Dress",
+    "releaseYear": 2023,
+    "price": 55.99,
+    "manufacturer": "StyleQueen",
+    "categories": "Girls', Clothing"
+  },
+  {
+    "name": "Boys' Hoodie",
+    "releaseYear": 2023,
+    "price": 40.00,
+    "manufacturer": "OutdoorGear",
+    "categories": "Boys', Clothing"
+  },
+  {
+    "name": "Kids' Rain Boots",
+    "releaseYear": 2022,
+    "price": 35.00,
+    "manufacturer": "ElegantFootwear",
+    "categories": "Kids', Footwear"
+  },
+  {
+    "name": "Unisex Kids' Pajamas",
+    "releaseYear": 2023,
+    "price": 25.99,
+    "manufacturer": "CozyDreams",
+    "categories": "Unisex, Kids', Clothing"
+  },
+  {
+    "name": "Girls' Ballet Flats",
+    "releaseYear": 2022,
+    "price": 60.00,
+    "manufacturer": "DanceWear",
+    "categories": "Girls', Footwear"
+  },
+  {
+    "name": "Boys' Cargo Shorts",
+    "releaseYear": 2023,
+    "price": 30.50,
+    "manufacturer": "AdventureKids",
+    "categories": "Boys', Clothing"
+  },
+  {
+    "name": "Kids' Sun Hat",
+    "releaseYear": 2022,
+    "price": 18.00,
+    "manufacturer": "SunProtect",
+    "categories": "Kids', Accessories"
+  },
+  {
+    "name": "Unisex Kids' Backpack",
+    "releaseYear": 2023,
+    "price": 45.00,
+    "manufacturer": "TinyTravelers",
+    "categories": "Unisex, Kids', Accessories"
+  },
+  {
+    "name": "Girls' Leggings",
+    "releaseYear": 2023,
+    "price": 20.00,
+    "manufacturer": "ActiveKids",
+    "categories": "Girls', Sportswear"
+  },
+  {
+    "name": "Boys' Swim Trunks",
+    "releaseYear": 2022,
+    "price": 28.00,
+    "manufacturer": "BeachStyle",
+    "categories": "Swimwear, Boys'"
+  },
+  {
+    "name": "Men's Leather Jacket",
+    "releaseYear": 2022,
+    "price": 250.00,
+    "manufacturer": "ElegantWear",
+    "categories": "Men's, Clothing"
+  }
+]

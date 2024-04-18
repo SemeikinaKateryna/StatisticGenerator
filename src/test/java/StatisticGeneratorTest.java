@@ -29,18 +29,18 @@ public class StatisticGeneratorTest {
     public void testGenerateStatisticEmptyList(){
         StatisticGenerator statisticGenerator = new StatisticGenerator(new ArrayList<>());
 
-        Map<Object, Integer> map = statisticGenerator.generateStatisticByAttribute("name");
+        IllegalArgumentException exception =
+                assertThrows(IllegalArgumentException.class, ()-> statisticGenerator.generateStatisticByAttribute("name"));
 
-        assertNotNull(map);
-        assertTrue(map.isEmpty());
+        assertEquals("List of objects is empty!", exception.getMessage());
     }
 
     @Test
     public void testGenerateStatisticByUnknownField(){
-        Map<Object, Integer> map = statisticGenerator.generateStatisticByAttribute("abbccc");
+        IllegalArgumentException exception =
+                assertThrows(IllegalArgumentException.class, ()-> statisticGenerator.generateStatisticByAttribute("abbccc"));
 
-        assertNotNull(map);
-        assertTrue(map.isEmpty());
+        assertEquals("No such field in this class exists!", exception.getMessage());
     }
     @Test
     public void testGenerateStatisticByYear(){
