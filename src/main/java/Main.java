@@ -10,24 +10,24 @@ import java.util.Map;
 
 public class Main {
     public static void main(String[] args) {
-        if (args.length != 2) {
-            System.out.println("Usage: java Main <folderPath> <attributeName>");
-            return;
-        }
+//        if (args.length != 2) {
+//            System.out.println("Usage: java Main <folderPath> <attributeName>");
+//            return;
+//        }
+//
+//        String folderPath = args[0];
+//        String attributeName = args[1];
 
-        String folderPath = args[0];
-        String attributeName = args[1];
-
-//        String folderPath = "D:\\IdeaProjects\\StatisticGenerator\\in";
-//        String attributeName = "name";
+        String folderPath = "D:\\IdeaProjects\\StatisticGenerator\\in";
+        String attributeName = "name";
 
         IJsonReader<Product> jsonReader = new JsonProductReader(folderPath);
         List<Product> products = jsonReader.read();
 
-        StatisticGenerator<Product> generator = new StatisticGenerator<>(Product.class, attributeName);
-        Map<Object, Integer> statisticsMap = generator.generateStatisticByAttribute(products);
+        StatisticGenerator generator = new StatisticGenerator(products);
+        Map<Object, Integer> statisticsMap = generator.generateStatisticByAttribute(attributeName);
 
         IXmlWriter xmlWriter = new XmlWriter();
-        System.out.println(xmlWriter.write(statisticsMap, generator.getAttribute()));
+        System.out.println(xmlWriter.write(statisticsMap, attributeName));
     }
 }

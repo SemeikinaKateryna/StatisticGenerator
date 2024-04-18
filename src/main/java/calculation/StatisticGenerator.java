@@ -1,39 +1,40 @@
 package calculation;
 
-import lombok.Getter;
+import entity.Product;
 
 import java.lang.reflect.Array;
 import java.lang.reflect.Field;
 import java.util.*;
 import java.util.stream.Stream;
 
-public class StatisticGenerator<T> {
-    private final Class<T> clazz;
+public class StatisticGenerator {
+    private final List<Product> objects;
+    private final Map<Object, Integer> statisticMap;
 
-    @Getter
-    private final String attribute;
-
-    public StatisticGenerator(Class<T> clazz, String attribute) {
-        this.clazz = clazz;
-        this.attribute = attribute;
+    public StatisticGenerator(List<Product> objects) {
+        this.objects = objects;
+        statisticMap = new HashMap<>();
     }
 
-    public Map<Object,Integer> generateStatisticByAttribute(List<T> objects) {
+    public Map<Object,Integer> generateStatisticByAttribute(String attribute) {
+        if(objects.isEmpty()){
+            System.out.println("List of objects is empty!");
+            return statisticMap;
+        }
+
         Field field;
         try {
-            field = clazz.getDeclaredField(this.attribute);
+            field = Product.class.getDeclaredField(attribute);
         } catch (NoSuchFieldException e) {
-            throw new RuntimeException("No such field in this class exists!", e);
+            System.out.println("No such field in this class exists!");
+            return statisticMap;
         }
         field.setAccessible(true);
 
-        // Створення мапи для зберігання статистики
-        Map<Object, Integer> statisticMap = new HashMap<>();
-
         // Заповнення мапи
-        for (T t : objects) {
+        for (Product pr : objects) {
             try {
-                Object attributeInClass = field.get(t);
+                Object attributeInClass = field.get(pr);
                 if (attributeInClass.getClass().isArray()) {
                     int length = Array.getLength(attributeInClass);
                     for (int i = 0; i < length; i++) {
@@ -52,9 +53,7 @@ public class StatisticGenerator<T> {
             }
         }
 
-        Map<Object, Integer> sortedStatisticMap = sortByValue(statisticMap);
-
-        return sortedStatisticMap;
+        return sortByValue(statisticMap);
     }
 
     private <K, V extends Comparable<? super V>> Map<K, V> sortByValue( Map<K, V> map )

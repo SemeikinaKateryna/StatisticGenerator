@@ -1,6 +1,5 @@
 package writing;
 
-import reading.JsonProductReader;
 import statistics.Statistics;
 
 import javax.xml.bind.JAXBContext;
